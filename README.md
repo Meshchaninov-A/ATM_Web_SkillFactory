@@ -1,1 +1,2 @@
-# ATM_Web_SkillFactory
+# ATM_Web_SkillFactory 
+Веб версия консольного приложения 
