@@ -41,7 +41,7 @@ public class UserCardOperations {
      *
      * @param cardId                 id счета с которого списываются средства
      * @param amountOfMoneyToGiveOut сумма средств для перевода
-     * @return результат операции в виде ResultOperation
+     * @return результат операции в виде HashMap
      */
     public synchronized HashMap<String, String> withdrawFunds(long cardId, long amountOfMoneyToGiveOut) {
         ResultOperation resultOperation;
@@ -64,7 +64,7 @@ public class UserCardOperations {
      * Получить баланс карты
      *
      * @param cardId id счета с которого запрашивается баланс
-     * @return результат операции в виде ResultOperation
+     * @return результат операции в виде HashMap
      */
     public synchronized HashMap<String, String> getBalance(long cardId) {
         ResultOperation resultOperation;
@@ -88,7 +88,7 @@ public class UserCardOperations {
      * @param cardId          id счета с которого списываются средства
      * @param anotherCardId   id счета на который зачисляются средства
      * @param fundsToTransfer сумма средств для перевода
-     * @return результат операции в виде ResultOperation
+     * @return результат операции в виде HashMap
      */
     public synchronized HashMap<String, String> transferFunds(long cardId, long anotherCardId, long fundsToTransfer) {
         ResultOperation resultOperation;

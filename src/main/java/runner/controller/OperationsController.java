@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
 
+/**
+ * Основной контроллер, отвечающий за операции с картами
+ */
 @RestController
 @RequestMapping("operations")
 public class OperationsController {

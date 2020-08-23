@@ -10,6 +10,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * Класс для чтения и записи денежных карт в файл с базой
+ */
 public final class ProjectFileWorker {
     private final static ProjectFileWorker worker = new ProjectFileWorker();
     private final static File config = new File(ServiceProperties.BASE_CARDS_FILE);
